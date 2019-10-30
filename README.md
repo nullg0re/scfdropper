@@ -3,9 +3,9 @@ Drops SCFs onto file shares so you can grab NTLMv2 hashes in return.
 
 # Help Menu:
 ```
-./scfdropper.py -h
-usage: scfdropper.py [-h] -ip IPADDRESS -u USER -p PWD -d DOMAIN [-t THREADS]
-                     -s SHARE [-f SUBFOLDER] [-o OUTFILE]
+./scfdropper.py --help
+usage: scfdropper.py [-h] -ip IPADDRESS -u USER -p PWD -d DOMAIN -s SHARE
+                     [-f SUBFOLDER] [-o OUTFILE] [--cleanup]
 
 SMB Spider for PS1 Scripts
 
@@ -17,14 +17,14 @@ optional arguments:
   -p PWD, --pwd PWD     password
   -d DOMAIN, --domain DOMAIN
                         domain
-  -t THREADS, --threads THREADS
-                        number of threads
   -s SHARE, --share SHARE
                         SMB Share
   -f SUBFOLDER, --subfolder SUBFOLDER
                         SMB Subfolder to drop SCF file onto.
   -o OUTFILE, --outfile OUTFILE
                         Outfile to log hashes
+  --cleanup             Remove SCF file from Share, MUST be ran with switches
+                        used previously
 ```
 
 # Example Usage:
