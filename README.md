@@ -7,7 +7,7 @@ Drops SCFs onto file shares so you can grab NTLMv2 hashes in return.
 usage: scfdropper.py [-h] -ip IPADDRESS -u USER -p PWD -d DOMAIN -s SHARE
                      [-f SUBFOLDER] [-o OUTFILE] [--cleanup]
 
-SMB Spider for PS1 Scripts
+Malicious SCF Dropper and NTLMv2 Catcher
 
 optional arguments:
   -h, --help            show this help message and exit
