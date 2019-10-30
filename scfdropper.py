@@ -99,7 +99,6 @@ def main():
 	parser.add_argument('-u','--user',help='user',required=True)
 	parser.add_argument('-p','--pwd',help='password',required=True)
 	parser.add_argument('-d','--domain',help='domain',required=True)
-	parser.add_argument('-t','--threads',help='number of threads',default=1, required=False)
 	parser.add_argument('-s','--share',help='SMB Share', required=True)
 	parser.add_argument('-f','--subfolder',help='SMB Subfolder to drop SCF file onto.', required=False)
 	parser.add_argument('-o','--outfile',help='Outfile to log hashes',required=False)
