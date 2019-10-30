@@ -1,0 +1,7 @@
+pysmb
+argparse
+netaddr
+colorama
+netifaces
+logging
+impacket
