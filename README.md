@@ -46,3 +46,11 @@ optional arguments:
 10/30/2019 09:31:27 AM: INFO: Remaining connections []
 
 ```
+# Clean up your dropped SCF files
+```
+./scfdropper.py -ip 192.168.204.132 -u testuser3 -p Summer2019 -d TGORE -s SharedFolder -f things --cleanup
+[+] Connection to 192.168.204.132 Successful! Cleaning up SCF's Now!
+[*] Attempting to delete the following file: \\192.168.204.132\SharedFolder\swag.scf
+[+] File has been deleted.
+
+```
